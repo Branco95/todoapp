@@ -3,9 +3,14 @@ interface ModalPropss {
   //parametros vindos do AddTask.tsx e que sao passados para o Modal.tsx
   modalOpen: boolean; // modalOpen é um booleano que vem do AddTask.tsx
   setModalOpen: (open: boolean) => boolean | void; // setModalOpen é uma funcao que recebe um booleano e retorna um booleano ou void
+  children: React.ReactNode;
 }
 
-const Modal: React.FC<ModalPropss> = ({ modalOpen, setModalOpen }) => {
+const Modal: React.FC<ModalPropss> = ({
+  modalOpen,
+  setModalOpen,
+  children,
+}) => {
   return (
     <div className={`modal ${modalOpen ? "modal-open" : ""}`}>
       {" "}
@@ -17,8 +22,7 @@ const Modal: React.FC<ModalPropss> = ({ modalOpen, setModalOpen }) => {
         >
           X
         </label>
-        <h3 className="text-lg font-bold">Congratulations</h3>
-        <p className="py-4"> You av</p>
+        {children}
       </div>
     </div>
   );

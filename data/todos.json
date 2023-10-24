@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": "1",
-      "text": "buy milk with some oranges"
+      "text": "buy milk with some orange"
     },
     {
       "id": "2",
@@ -23,10 +23,6 @@
     {
       "id": "5e94a02c-55ec-4d0b-bb3b-12824ff043ab",
       "text": "learn english"
-    },
-    {
-      "id": "eacab2d0-56c8-4aa1-a0a3-61c09082b645",
-      "text": "walking the cat"
     }
   ]
 }

@@ -53,6 +53,14 @@ const AddTask = () => {
               placeholder="Type here"
               className="input input-bordered  w-full"
             />
+          </div>
+          <div className=" modal-action justify-start  ">
+            <input
+              value={newTaskValue}
+              onChange={(e) => setNewTaskValue(e.target.value)}
+              type="date"
+              className="input input-bordered  "
+            />
             <button type="submit" className="btn ">
               Submit
             </button>

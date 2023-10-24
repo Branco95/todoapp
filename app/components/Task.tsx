@@ -33,6 +33,7 @@ export const Task: React.FC<TaskProps> = ({ task }) => {
     <tr key={task.id}>
       <td className="">{task.text}</td>
       <td className="">{task.date}</td>
+      <td className="cursor-pointer">{task.dateend}</td>
       <td className="flex gap-5 justify-center">
         <FiEdit
           onClick={() => setOpenModalEdit(true)}

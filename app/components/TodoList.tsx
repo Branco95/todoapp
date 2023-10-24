@@ -13,6 +13,7 @@ const TodoList: React.FC<TodoListProps> = ({ tasks }) => {
           <tr className="bg-slate-100">
             <th>Tasks</th>
             <th>Added</th>
+            <th>Ending</th>
             <th className="text-center">Actions</th>
           </tr>
         </thead>
